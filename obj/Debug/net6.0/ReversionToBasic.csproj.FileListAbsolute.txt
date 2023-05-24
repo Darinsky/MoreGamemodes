@@ -1,0 +1,10 @@
+C:\Users\Darinsky\Desktop\Mod Sources\Crossbowmaster\obj\Debug\net6.0\ReversionToBasic.csproj.AssemblyReference.cache
+C:\Users\Darinsky\Desktop\Mod Sources\Crossbowmaster\obj\Debug\net6.0\ReversionToBasic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Darinsky\Desktop\Mod Sources\Crossbowmaster\obj\Debug\net6.0\ReversionToBasic.AssemblyInfoInputs.cache
+C:\Users\Darinsky\Desktop\Mod Sources\Crossbowmaster\obj\Debug\net6.0\ReversionToBasic.AssemblyInfo.cs
+C:\Users\Darinsky\Desktop\Mod Sources\Crossbowmaster\obj\Debug\net6.0\ReversionToBasic.csproj.CoreCompileInputs.cache
+C:\Users\Darinsky\Desktop\Mod Sources\Crossbowmaster\obj\Debug\net6.0\CrossbowMasterJoke.dll
+C:\Users\Darinsky\Desktop\Mod Sources\Crossbowmaster\obj\Debug\net6.0\refint\CrossbowMasterJoke.dll
+C:\Users\Darinsky\Desktop\Mod Sources\Crossbowmaster\bin\Debug\net6.0\CrossbowMasterJoke.deps.json
+C:\Users\Darinsky\Desktop\Mod Sources\Crossbowmaster\bin\Debug\net6.0\CrossbowMasterJoke.dll
+C:\Users\Darinsky\Desktop\Mod Sources\Crossbowmaster\obj\Debug\net6.0\ref\CrossbowMasterJoke.dll
