@@ -19,9 +19,10 @@
 
         
 
-        public const string RepoOwner = "Darinsky"; // TODO add your github username hero
-         //  public const string RepoName = "CandyMonkey";//public const string RepoName = ""; // TODO add your repo name here
-           //public const string Icon = VanillaSprites.Fortifried;
+        public const string RepoOwner = "Darinsky";
+          public const string RepoName = "MoreGamemodes";
+          public const string WorksOnVersion = "36";
+          
          public const string Author = "Darinsky";
     }
 }
