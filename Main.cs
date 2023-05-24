@@ -1058,7 +1058,7 @@ namespace MoreGameModes;
                 gameModeModel.SetStartingRound(10);
             if (FastTrackEnabled == false)
             {
-                gameModeModel.SetStartingCash(1400);
+                gameModeModel.SetStartingCash(1500);
             }
 
                 gameModeModel.SetEndingRound(140);
@@ -1072,7 +1072,7 @@ namespace MoreGameModes;
             gameModeModel.SetSellMultiplier(0f);
 
             
-             gameModeModel.SetAllCashMultiplier(0.5f);
+             gameModeModel.SetAllCashMultiplier(0.25f);
             gameModeModel.AddMutator(new LockTowerModModel("lockingurmom", "BananaFarm"));
             gameModeModel.AddMutator(new MonkeyMoneyModModel("mrkrabs", 2));
             gameModeModel.AddMutator(new DisableMonkeyKnowledgeModModel("fr this works"));
