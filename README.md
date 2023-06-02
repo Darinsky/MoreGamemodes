@@ -10,6 +10,9 @@ This mods add tons of new and ~~unique~~ gamemodes to the game, which inclues:
 - Fast Track Option
 - Mastery Mode
 - Boss Rush
+- Inflation Mode
+- Baby Mode
+- Small Towers
 - Random Rounds
 - All Fortified
 - One Red Bloon - with permission from DatJaneDoe
