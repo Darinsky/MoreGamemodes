@@ -24,7 +24,7 @@ internal static class Spawner_IsRoundOver
 
 
             
-            if (aliveBloons.Any(bloon => bloon is not null && bloon.bloonModel.isBoss))
+            if (aliveBloons.Any(bloon => bloon is not null && bloon.bloonModel.isBoss && InGame.instance.GetGameModel().GetRoundSet().name.Contains("-BossRush")))
             {
                 if (!Game.instance.GetPlayerProfile().inGameSettings.autoPlay)
                 {
@@ -45,3 +45,4 @@ internal static class Spawner_IsRoundOver
         return true;
     }
 }
+

@@ -37,3 +37,31 @@ global using Il2CppAssets.Scripts.Unity.UI_New;
 global using Il2CppAssets.Scripts.Simulation.Towers.Filters;
 global using Il2CppAssets.Scripts.Models.Towers.Filters;
 global using System;
+
+
+
+global using System.Reflection;
+global using System.Runtime.CompilerServices;
+
+
+
+global using Il2CppAssets.Scripts.Data;
+global using Il2CppAssets.Scripts.Data.MapSets;
+//global using Il2CppAssets.Scripts.Models;
+
+global using Il2CppAssets.Scripts.Models.Map;
+global using Il2CppAssets.Scripts.Models.Towers;
+
+global using Il2CppAssets.Scripts.Models.Towers.Behaviors.Attack;
+global using Il2CppAssets.Scripts.Models.Towers.Projectiles;
+
+global using Il2CppAssets.Scripts.Models.Towers.Weapons;
+
+global using Il2CppAssets.Scripts.Unity.Bridge;
+global using Il2CppAssets.Scripts.Unity.Display;
+global using Il2CppAssets.Scripts.Unity.Map;
+
+global using Il2CppAssets.Scripts.Unity.UI_New.InGame;
+global using Il2CppNinjaKiwi.Common;
+//global using Il2CppSystem;
+
