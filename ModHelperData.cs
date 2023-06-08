@@ -13,7 +13,8 @@
             "\n · Inflation Mode" +
             "\n · Baby Mode " +
             "\n · Small Towers" +
-            "\n · Random Rounds" +
+            "\n · Accelerated Rounds" +
+            "\n · Random Rounds (Broken till i fix it)" +
             "\n · Support Only " +
             "\n · All Fortified " +
             "\n · Stronger Bloons, with changeable Health/Speed Boost" +
@@ -25,7 +26,7 @@
 
         public const string RepoOwner = "Darinsky";
         public const string RepoName = "MoreGamemodes";
-        public const string WorksOnVersion = "36";
+        public const string WorksOnVersion = "37";
 
         public const string Author = "Darinsky";
     }

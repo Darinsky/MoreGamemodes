@@ -13,7 +13,8 @@ This mods add tons of new and ~~unique~~ gamemodes to the game, which inclues:
 - Inflation Mode
 - Baby Mode
 - Small Towers
-- Random Rounds
+- Accelerated Rounds
+- ~~Random Rounds~~ Broken till further notice
 - All Fortified
 - One Red Bloon - with permission from DatJaneDoe
 - And a few other ones.

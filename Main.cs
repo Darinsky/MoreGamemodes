@@ -36,6 +36,7 @@ using Il2CppNinjaKiwi.Common;
 
 using UnityEngine;
 using Il2CppAssets.Scripts.Simulation.Towers;
+using Il2CppAssets.Scripts.Models.Gameplay.Mods;
 
 [assembly: MelonModInfo(typeof(MoreGameModes.MoreGameModes), MoreGameModes.ModHelperData.Name, MoreGameModes.ModHelperData.Version, MoreGameModes.ModHelperData.RepoOwner)]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
@@ -74,7 +75,7 @@ public class MoreGameModes : BloonsTD6Mod
 
     public override void OnTowerUpgraded(Tower tower, string upgradeName, TowerModel newBaseTowerModel)
     {
-        if (InGame.instance.GetGameModel().GetRoundSet().name.Contains("Inflation"))
+        if (InGame.instance.GetGameModel().roundSet.name.Contains("Inflation"))
         {
             foreach (var a in InGame.instance.GetGameModel().upgrades)
             {
@@ -111,7 +112,7 @@ public class MoreGameModes : BloonsTD6Mod
     {
         //MelonLogger.Msg(result.GetRoundSet().name.ToString());
         
-        if (result.GetRoundSet().name.ToString().Contains("Small"))
+        if (result.roundSet.name.ToString().Contains("Small"))
             
         {
             
@@ -206,7 +207,7 @@ public class MoreGameModes : BloonsTD6Mod
             }
         }
 
-        if(result.GetRoundSet().name.Contains("Inflation"))
+        if(result.roundSet.name.Contains("Inflation"))
         {
             foreach (var inflat in result.upgrades)
             {
@@ -745,7 +746,7 @@ public class MoreGameModes : BloonsTD6Mod
     {
         public override string BaseRoundSet => RoundSetType.Default;
         public override int DefinedRounds => BaseRounds.Count;
-        public override string DisplayName => "Make Towers Small";
+        public override string DisplayName => "Inflation";
 
         public override bool AddToOverrideMenu => Debugmode;
 
@@ -770,12 +771,12 @@ public class MoreGameModes : BloonsTD6Mod
         public string asd = "";
     
         public override string Icon => "RandRounds-Icon";
-        public override bool AddToOverrideMenu => true;
+        public override bool AddToOverrideMenu => false;
         
 
         public override void ModifyRoundModels(RoundModel roundModel, int round)
         {
-
+            /*
            
              if (round == 0 )
             {
@@ -793,7 +794,7 @@ public class MoreGameModes : BloonsTD6Mod
             {
                 default:
                     // Thanks warper for letting me use his code :)
-                    RoundSetModel roundSet = Game.instance.model.roundSets[1];
+                    RoundSetModel roundSet = Game.instance.model.roundSet;
                     
 
                         RoundModel newRound = roundSet.rounds[round];
@@ -848,10 +849,10 @@ public class MoreGameModes : BloonsTD6Mod
             }
 
 
-
+            */
             
         }
-
+           
     }
 
 
@@ -873,7 +874,30 @@ public class MoreGameModes : BloonsTD6Mod
             }
         }
 
-    
+    public class AcceleratedRounds : ModGameMode
+    {
+        public override string Difficulty => DifficultyType.Hard;
+
+        public override string BaseGameMode => GameModeType.Medium;
+
+        public override string DisplayName => "Accelerated Rounds";
+
+        public override string Icon => VanillaSprites.FasterBloonsIcon;
+
+        public override void ModifyBaseGameModeModel(ModModel gameModeModel)
+        {
+            gameModeModel.UseRoundSet("AcceleratedRoundSet");
+
+            gameModeModel.SetStartingCash(2000);
+            gameModeModel.SetEndingRound(31);
+            gameModeModel.SetStartingRound(1);
+            gameModeModel.SetAllCashMultiplier(1.35f);
+            
+
+        }
+    }
+
+
     public class MegaChimps : ModGameMode
         {
             public override string Difficulty => DifficultyType.Hard;
@@ -907,7 +931,7 @@ public class MoreGameModes : BloonsTD6Mod
             
              gameModeModel.SetAllCashMultiplier(0.25f);
             gameModeModel.AddMutator(new LockTowerModModel("lockingurmom", "BananaFarm"));
-            gameModeModel.AddMutator(new MonkeyMoneyModModel("mrkrabs", 2));
+            gameModeModel.AddMutator(new MonkeyMoneyModModel("mrkrabs", 0, 2));
             gameModeModel.AddMutator(new DisableMonkeyKnowledgeModModel("fr this works"));
             
 
@@ -954,7 +978,7 @@ public class MoreGameModes : BloonsTD6Mod
         }
     }
 
-    public class RandomizedRounds: ModGameMode
+   /* public class RandomizedRounds: ModGameMode
     {
         public override string Difficulty => DifficultyType.Medium;
 
@@ -963,6 +987,9 @@ public class MoreGameModes : BloonsTD6Mod
         public override string DisplayName => "Random Rounds";
 
         public override string Icon => "RandRounds-Icon";
+        
+
+
 
         public override void ModifyBaseGameModeModel(ModModel gameModeModel)
         {
@@ -970,6 +997,7 @@ public class MoreGameModes : BloonsTD6Mod
             gameModeModel.SetEndingRound(80);
         }
     }
+   */
     public class BabyMode : ModGameMode
     {
         public override string Difficulty => DifficultyType.Easy;
