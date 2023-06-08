@@ -3,7 +3,7 @@
 
     public static class ModHelperData
     {
-        public const string Version = "36.3";
+        public const string Version = "37.0";
         public const string Name = "Gamemodes++";
 
         public const string Description = "Add Multiple Gamemodes to the game, which includes: " +
